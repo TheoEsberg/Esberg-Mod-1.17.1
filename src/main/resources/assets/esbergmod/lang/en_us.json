@@ -1,0 +1,28 @@
+{
+  "item.esbergmod.empty_cup": "Empty Cup",
+  "item.esbergmod.coffee_cup": "Cup of Coffee",
+  "item.esbergmod.water_cup": "Cup of Water",
+  "item.esbergmod.roasted_coffee_beans": "Roasted Coffee Beans",
+  "item.esbergmod.copper_sword": "Copper Sword",
+  "item.esbergmod.copper_pickaxe": "Copper Pickaxe",
+  "item.esbergmod.copper_axe": "Copper Axe",
+  "item.esbergmod.copper_shovel": "Copper Shovel",
+  "item.esbergmod.copper_hoe": "Copper Hoe",
+  "item.esbergmod.copper_helmet": "Copper Helmet",
+  "item.esbergmod.copper_chestplate": "Copper Chestplate",
+  "item.esbergmod.copper_leggings": "Copper Leggings",
+  "item.esbergmod.copper_boots": "Copper Boots",
+
+  "block.esbergmod.greenwood_log": "Greenwood Log",
+  "block.esbergmod.greenwood_planks": "Greenwood Planks",
+  "block.esbergmod.greenwood_wood": "Greenwood Wood",
+  "block.esbergmod.stripped_greenwood_log": "Stripped Greenwood Log",
+  "block.esbergmod.stripped_greenwood_wood": "Stripped Greenwood Wood",
+  "block.esbergmod.greenwood_leaves": "Greenwood Leaves",
+  "block.esbergmod.greenwood_sapling": "Greenwood Sapling",
+
+  "block.esbergmod.coffee_brewer": "Coffee Brewer",
+  "screen.esbergmod.coffee_brewer": "Coffee Brewer",
+
+  "itemGroup.esbergModTab": "Esberg Mod"
+}

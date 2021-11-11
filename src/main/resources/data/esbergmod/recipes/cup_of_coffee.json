@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#X"
+  ],
+  "key": {
+    "#": {
+      "item": "esbergmod:water_cup"
+    },
+    "X": {
+      "item": "esbergmod:roasted_coffee_beans"
+    }
+  },
+  "result": {
+    "item": "esbergmod:coffee_cup"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "esbergmod:item/water_cup"
+  }
+}

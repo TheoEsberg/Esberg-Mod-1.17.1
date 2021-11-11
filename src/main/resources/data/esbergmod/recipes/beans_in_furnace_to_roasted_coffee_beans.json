@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "minecraft:cocoa_beans"
+  },
+  "result": "esbergmod:roasted_coffee_beans",
+  "experience": 0.35,
+  "cookingtime": 200
+}

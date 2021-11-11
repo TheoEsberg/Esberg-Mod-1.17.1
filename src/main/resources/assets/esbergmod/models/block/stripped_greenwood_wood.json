@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "esbergmod:block/stripped_greenwood_log",
+    "side": "esbergmod:block/stripped_greenwood_log"
+  }
+}

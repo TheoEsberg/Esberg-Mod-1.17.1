@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "esbergmod:block/greenwood_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "esbergmod:block/greenwood_wood"
+    },
+    "axis=z": {
+      "model": "esbergmod:block/greenwood_wood",
+      "x": 90
+    }
+  }
+}

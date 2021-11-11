@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "esbergmod:block/greenwood_leaves"
+  }
+}

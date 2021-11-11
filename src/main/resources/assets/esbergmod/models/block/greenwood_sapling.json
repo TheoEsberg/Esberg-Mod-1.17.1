@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "esbergmod:block/greenwood_sapling"
+  }
+}
