@@ -2,7 +2,12 @@ package dev.esberg.esbergmod.tileentity;
 
 import dev.esberg.esbergmod.EsbergMod;
 import dev.esberg.esbergmod.block.ModBlocks;
+import dev.esberg.esbergmod.item.ModItems;
+import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fmllegacy.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -16,7 +21,10 @@ public class ModTileEntities {
             BLOCK_ENTITES.register("coffee_brewer_tile", () -> BlockEntityType.Builder.of(
                     CoffeeBrewerTile::new, ModBlocks.COFFEE_BREWER.get()).build(null));
 
+
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITES.register(eventBus);
     }
+
+
 }

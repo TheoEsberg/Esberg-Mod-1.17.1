@@ -6,6 +6,7 @@ import dev.esberg.esbergmod.block.ModBlocks;
 import dev.esberg.esbergmod.container.ModContainers;
 import dev.esberg.esbergmod.item.ModItems;
 import dev.esberg.esbergmod.screen.CoffeeBrewerScreen;
+import dev.esberg.esbergmod.screen.PatricThePouchScreen;
 import dev.esberg.esbergmod.tileentity.ModTileEntities;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -59,6 +60,9 @@ public class EsbergMod
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.GREENWOOD_SAPLING.get(), RenderType.cutout());
         MenuScreens.register(ModContainers.COFFEE_BREWER_CONTAINER.get(),
                 CoffeeBrewerScreen::new);
+
+        MenuScreens.register(ModContainers.PATRIC_THE_POUCH_CONTAINER.get(),
+                PatricThePouchScreen::new);
     }
 
     private void setup(final FMLCommonSetupEvent event) {

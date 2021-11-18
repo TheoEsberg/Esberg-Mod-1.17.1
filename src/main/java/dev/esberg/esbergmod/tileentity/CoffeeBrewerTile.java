@@ -3,6 +3,8 @@ package dev.esberg.esbergmod.tileentity;
 import dev.esberg.esbergmod.item.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -41,7 +43,7 @@ public class CoffeeBrewerTile extends BlockEntity {
     }
 
     private  ItemStackHandler createHandler () {
-        return new ItemStackHandler(2){
+        return new ItemStackHandler(3){
             @Override
             protected void onContentsChanged(int slot) {
                 setChanged();
@@ -90,6 +92,7 @@ public class CoffeeBrewerTile extends BlockEntity {
             this.itemHandler.getStackInSlot(1).shrink(1);
 
             this.itemHandler.insertItem(2, new ItemStack(ModItems.COFFEE_CUP.get()), false);
+            level.playSound(null, this.getBlockPos(), SoundEvents.BOTTLE_FILL, SoundSource.BLOCKS, 1, 10);
         }
     }
 }

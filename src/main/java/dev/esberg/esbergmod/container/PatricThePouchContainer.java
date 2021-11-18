@@ -1,47 +1,30 @@
 package dev.esberg.esbergmod.container;
 
-import dev.esberg.esbergmod.block.ModBlocks;
-import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.inventory.ContainerLevelAccess;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.wrapper.InvWrapper;
 
+public class PatricThePouchContainer extends AbstractContainerMenu {
 
-public class CoffeeBrewerContainer extends AbstractContainerMenu {
-
-    private final BlockEntity blockEntity;
     private final Player playerEntity;
     private final IItemHandler playerInventory;
 
-    public CoffeeBrewerContainer(int windowId, Level level, BlockPos pos, Inventory playerInventory, Player player) {
-        super(ModContainers.COFFEE_BREWER_CONTAINER.get(), windowId);
-        this.blockEntity = level.getBlockEntity(pos);
-        playerEntity = player;
-        this.playerInventory = new InvWrapper(playerInventory);
-
-        layoutPlayerInventorySlots(8, 86);
-        if(blockEntity != null) {
-            blockEntity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY).ifPresent(h -> {
-                addSlot(new SlotItemHandler(h, 0, 67, 31));
-                addSlot(new SlotItemHandler(h, 1, 93, 31));
-                addSlot(new SlotItemHandler(h, 2, 80, 53));
-            });
-        }
+    public PatricThePouchContainer(int windowId, Level level, Inventory inv, Player player) {
+        super(ModContainers.PATRIC_THE_POUCH_CONTAINER.get(), windowId);
+        this.playerEntity = player;
+        this.playerInventory = new InvWrapper(inv);
     }
 
     @Override
     public boolean stillValid(Player pPlayer) {
-        return stillValid(ContainerLevelAccess.create(blockEntity.getLevel(), blockEntity.getBlockPos()),
-                pPlayer, ModBlocks.COFFEE_BREWER.get());
+        return false;
     }
 
     private int addSlotRange(IItemHandler handler, int index, int x, int y, int amount, int dx) {
@@ -86,7 +69,7 @@ public class CoffeeBrewerContainer extends AbstractContainerMenu {
     private static final int TE_INVENTORY_FIRST_SLOT_INDEX = VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT;
 
     // THIS YOU HAVE TO DEFINE!
-    private static final int TE_INVENTORY_SLOT_COUNT = 3;  // must match TileEntityInventoryBasic.NUMBER_OF_SLOTS
+    private static final int TE_INVENTORY_SLOT_COUNT = 0;  // must match TileEntityInventoryBasic.NUMBER_OF_SLOTS
 
     @Override
     public ItemStack quickMoveStack(Player playerIn, int index) {

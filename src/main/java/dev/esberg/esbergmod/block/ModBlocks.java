@@ -1,6 +1,7 @@
 package dev.esberg.esbergmod.block;
 
 import dev.esberg.esbergmod.EsbergMod;
+import dev.esberg.esbergmod.block.custom.CoffeeBrewerBlock;
 import dev.esberg.esbergmod.block.custom.trees.GreenwoodTree;
 import dev.esberg.esbergmod.item.ModCreativeModeTab;
 import dev.esberg.esbergmod.item.ModItems;
@@ -45,7 +46,7 @@ public class ModBlocks {
             () -> new SaplingBlock(new GreenwoodTree(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
     public static final RegistryObject<Block> COFFEE_BREWER = registerBlock("coffee_brewer",
-            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(0.5f)));
+            () -> new CoffeeBrewerBlock(BlockBehaviour.Properties.of(Material.METAL).strength(0.5f)));
 
 
 

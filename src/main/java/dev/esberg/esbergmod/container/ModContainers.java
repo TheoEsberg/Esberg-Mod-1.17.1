@@ -22,6 +22,13 @@ public class ModContainers {
                 return new CoffeeBrewerContainer(windowId, level, pos, inv, inv.player);
             })));
 
+    public static final RegistryObject<MenuType<PatricThePouchContainer>> PATRIC_THE_POUCH_CONTAINER
+            = CONTAINERS.register("patric_the_pouch_container",
+            () -> IForgeContainerType.create((((windowId, inv, data) -> {
+                Level level = inv.player.getCommandSenderWorld();
+                return new PatricThePouchContainer(windowId, level, inv, inv.player);
+            }))));
+
     public static void register(IEventBus eventBus) {
         CONTAINERS.register(eventBus);
     }

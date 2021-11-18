@@ -12,6 +12,7 @@
   "item.esbergmod.copper_chestplate": "Copper Chestplate",
   "item.esbergmod.copper_leggings": "Copper Leggings",
   "item.esbergmod.copper_boots": "Copper Boots",
+  "item.esbergmod.patric_the_pouch": "Patric The Pouch",
 
   "block.esbergmod.greenwood_log": "Greenwood Log",
   "block.esbergmod.greenwood_planks": "Greenwood Planks",
@@ -23,6 +24,7 @@
 
   "block.esbergmod.coffee_brewer": "Coffee Brewer",
   "screen.esbergmod.coffee_brewer": "Coffee Brewer",
+  "screen.esbergmod.patric_the_pouch": "Patric The Pouch",
 
   "itemGroup.esbergModTab": "Esberg Mod"
 }

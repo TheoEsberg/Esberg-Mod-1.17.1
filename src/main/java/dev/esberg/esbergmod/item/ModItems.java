@@ -1,11 +1,11 @@
 package dev.esberg.esbergmod.item;
 
 import dev.esberg.esbergmod.EsbergMod;
-import net.minecraft.client.resources.model.Material;
+import dev.esberg.esbergmod.item.custom.EmptyCupItem;
+import dev.esberg.esbergmod.item.custom.PatricThePouchItem;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
-import net.minecraft.world.item.alchemy.Potion;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fmllegacy.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -14,9 +14,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, EsbergMod.MOD_ID);
-
-    public static final RegistryObject<Item> EMPTY_CUP = ITEMS.register("empty_cup",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ESBERG_MOD_TAB)));
 
     public static final RegistryObject<Item> WATER_CUP = ITEMS.register("water_cup",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ESBERG_MOD_TAB)
@@ -63,7 +60,11 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterial.COPPER, EquipmentSlot.FEET,
                     new Item.Properties().tab(ModCreativeModeTab.ESBERG_MOD_TAB)));
 
+    public static final RegistryObject<Item> EMPTY_CUP = ITEMS.register("empty_cup",
+            () -> new EmptyCupItem(new Item.Properties().tab(ModCreativeModeTab.ESBERG_MOD_TAB)));
 
+    public static final RegistryObject<Item> PATRIC_THE_POUCH = ITEMS.register("patric_the_pouch",
+            () -> new PatricThePouchItem(new Item.Properties().tab(ModCreativeModeTab.ESBERG_MOD_TAB)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
